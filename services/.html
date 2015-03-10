@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-US" > <!--<![endif]-->
+
+<head>
+<meta charset="UTF-8">
+<!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+	
+<title>Page not found | batakoo</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Page not found | batakoo</title>
+<link rel="alternate" type="application/rss+xml" title="batakoo &raquo; Feed" href="http://batakoo.themesawesome.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="batakoo &raquo; Comments Feed" href="http://batakoo.themesawesome.com/comments/feed/" />
+<link rel='stylesheet' id='aqpb-view-css-css'  href='http://batakoo.themesawesome.com/wp-content/plugins/aqua-page-builder/assets/stylesheets/aqpb-view.css?ver=1423473980' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://batakoo.themesawesome.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://batakoo.themesawesome.com/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.5' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='batakoo-bootstrap-css'  href='http://batakoo.themesawesome.com/wp-content/themes/batakoo/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='batakoo-plugin-css-css'  href='http://batakoo.themesawesome.com/wp-content/themes/batakoo/css/plugin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='batakoo-style-css'  href='http://batakoo.themesawesome.com/wp-content/themes/batakoo/style.css?ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='batakoo-font-css'  href='http://batakoo.themesawesome.com/wp-content/themes/batakoo/css/font.css' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%7CPT+Serif&#038;ver=1422016063' type='text/css' media='all' />
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.5'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.5'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/themes/batakoo/js/modernizr.js?ver=4.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/themes/batakoo/js/respond.js?ver=4.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://batakoo.themesawesome.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://batakoo.themesawesome.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1" />
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				// CUSTOM AJAX CONTENT LOADING FUNCTION
+				var ajaxRevslider = function(obj) {
+				
+					// obj.type : Post Type
+					// obj.id : ID of Content to Load
+					// obj.aspectratio : The Aspect Ratio of the Container / Media
+					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+					
+					var content = "";
+
+					data = {};
+					
+					data.action = 'revslider_ajax_call_front';
+					data.client_action = 'get_slider_html';
+					data.token = 'f1682bc8ee';
+					data.type = obj.type;
+					data.id = obj.id;
+					data.aspectratio = obj.aspectratio;
+					
+					// SYNC AJAX REQUEST
+					jQuery.ajax({
+						type:"post",
+						url:"http://batakoo.themesawesome.com/wp-admin/admin-ajax.php",
+						dataType: 'json',
+						data:data,
+						async:false,
+						success: function(ret, textStatus, XMLHttpRequest) {
+							if(ret.success == true)
+								content = ret.data;								
+						},
+						error: function(e) {
+							console.log(e);
+						}
+					});
+					
+					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+					 return content;						 
+				};
+				
+				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+				var ajaxRemoveRevslider = function(obj) {
+					return jQuery(obj.selector+" .rev_slider").revkill();
+				};
+
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				var extendessential = setInterval(function() {
+					if (jQuery.fn.tpessential != undefined) {
+						clearInterval(extendessential);
+						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+							// func: the Function Name which is Called once the Item with the Post Type has been clicked
+							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+							// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+						}
+					}
+				},30);
+			});
+		</script>
+		<style type="text/css">.site-header, .scroll-run .site-header{background-color:#242533}.site-navigation li a{color:#ffffff}.site-navigation li ul, .site-navigation li:hover > a{background-color:#2f3043}.site-navigation li ul li a{border-left-color:#2f3043}.site-navigation li ul li a:hover{border-color:#f6c606}.small-icon i{color:#f6c606}.small-icon{border-color:#f6c606}.col-service h4{color:#ffffff}.small-icon-text p{color:#cccccc}.aq-block-batakoo_about_block .home-title{color:#ffffff}.aq-block-batakoo_about_block .btn-default{border-color:#ffffff}.aq-block-batakoo_about_block .home-title, .aq-block-batakoo_about_block .btn-default:hover{border-color:#f6c606}.aq-block-batakoo_about_block p{color:#cccccc}.contact-hero{background-color:#242533}.contact-hero p{color:#ffffff}.home-title .wrap-1:before, .widget-title .wrap-1:before{background-color:#f6c606}.home-title, .widget-title{color:#242533}.testimonial-item .context, .testimonial-item .flex-direction-nav a{color:#ffffff}.testimonial-item .flex-control-paging li a.flex-active{background-color:#ffffff}.testimonial-item .flex-control-paging li a{border-color:#ffffff}.aq-block-batakoo_services_block .filter{background-color:#4a4d71}.aq-block-batakoo_services_block .filter ul span{color:#ffffff}.aq-block-batakoo_services_block .filter ul li:hover, .aq-block-batakoo_services_block .filter ul li.active{background-color:#f6c606}.service .info .title, .service .info p{color:#000000}ul#options li a.selected, ul#options li a:hover{background-color:#242533}ul#options li a{color:#242533}ul#options li a.selected, ul#options li a:hover{color:#ffffff}.foliobox{background:#f6c606}.foliobox figcaption, .foliobox .foltitle a, .foliobox .goto{color:#ffffff}.foliobox .goto, .foliobox figcaption::before{border-color:#ffffff}.entry-title a, #secondary .widget ul li a{color:#333333}.entry-title a:hover, #secondary .widget ul li a:hover{color:#e18f00}.content-area p, .entry-meta .comment-link .comment-number, .entry-meta div.social-shares a, .entry-meta div.comment-link, .entry-meta div.social-shares{color:#878787}.cat-links a, #secondary .post-category a{color:#e18f00}.cat-links a:hover, #secondary .post-category a:hover{color:#fb9f00}.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{color:#ffffff}.pagination > li > a, .pagination > li > span{background-color:#ffffff}.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{background-color:#e18f00}.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{border-color:#e18f00}.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus{color:#e18f00}.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus{background-color:#eeeeee}.post.format-quote blockquote, .format-quote.search-result blockquote{background-color:#242533}.post.format-quote blockquote, .format-quote.search-result blockquote{color:#ffffff}.btn-default, .comment-respond .submit, .contact .wpcf7-submit{background-color:#f6c606}.btn-default, .comment-respond .submit, .contact .wpcf7-submit{border-color:#f6c606}.btn-default, .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle, .comment-respond .submit, .contact .wpcf7-submit{color:#ffffff}.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle, .comment-respond .submit:hover, .contact .wpcf7-submit:hover{background-color:#c49e05}.comment-respond .submit:hover, .contact .wpcf7-submit:hover{border-color:#c49e05}.footer-credit{background-color:#242533}.list-socmed li a{color:#929299}.list-socmed li a:hover{color:#ffffff}.footer-credit{color:#ffffff}</style> <style type="text/css" title="dynamic-css" class="options-output">body{font-family:Open Sans;font-weight:400;font-style:normal;}h1,h2,h3,h4,h5,h6{font-family:Open Sans;font-weight:400;font-style:normal;}.site-navigation li a{font-family:Open Sans;font-weight:700;font-style:normal;}.entry-content{font-family:PT Serif;font-weight:normal;font-style:400;}</style>
+</head>
+
+<body class="error404">
+
+			<header id="masthead" class="site-header navbar-fixed-top">
+    		<div class="header-navigation">
+    			<div class="container-fluid">
+    				<div class="row">
+
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-navigation" aria-expanded="false">
+			        	<span class="sr-only">Toggle navigation</span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        </button>
+
+    					<div class="logo navbar-brand">
+								
+	<div class="logo-image">
+	<a href="http://batakoo.themesawesome.com"><img src="http://batakoo.themesawesome.com/wp-content/uploads/2015/01/header-logo.png" class="image-logo" alt="logo" /></a>
+	</div>
+	
+	    					</div><!-- end logo -->
+
+    					<nav id="primary-navigation" class="site-navigation navbar-collapse collapse" role="navigation">
+    						<nav class="nav-menu">
+    							<ul id="menu-main-menu" class="menu"><li id="menu-item-3953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3953"><a href="http://batakoo.themesawesome.com/">Home</a></li>
+<li id="menu-item-3963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963"><a href="http://batakoo.themesawesome.com/services/">Services</a></li>
+<li id="menu-item-3961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3961"><a href="http://batakoo.themesawesome.com/portfolio/">Projects</a></li>
+<li id="menu-item-3964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3964"><a href="http://batakoo.themesawesome.com/testimonial/">Testimonial</a></li>
+<li id="menu-item-3966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3966"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-3971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3971"><a href="http://batakoo.themesawesome.com/frequently-asked-questions/">Frequently Asked Question</a></li>
+	<li id="menu-item-3969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3969"><a href="http://batakoo.themesawesome.com/?s=a">Serch Result</a></li>
+	<li id="menu-item-3970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3970"><a href="http://batakoo.themesawesome.com/404">404 Page</a></li>
+</ul>
+</li>
+<li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-3954"><a href="http://batakoo.themesawesome.com/blog/">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-3960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3960"><a href="http://batakoo.themesawesome.com/masonry-grid-blog/">Masonry Grid Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-3955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3955"><a href="http://batakoo.themesawesome.com/contact-2/">Contact</a></li>
+</ul>    						</nav><!-- end nav-menu -->
+    					</nav><!-- primary-navigation -->
+
+    					  <div class="header-feature"><a href="http://batakoo.themesawesome.com/contact-2/" class="btn btn-lg btn-default"> Get a Quote </a></div>
+    				
+                    </div><!-- end row -->
+    			</div><!-- end container-fluid -->
+    		</div><!-- end header-navigation -->
+    	</header><!-- end #masthead -->
+<div id="main" class="site-main clearfix">
+
+
+	
+		<div class="container">
+				<div class="row">
+
+					<div class="content-area fullwidth" id="primary">
+						<div class="site-content" id="content">
+
+							<div class="error-page col-md-push-2">
+								
+								<div class="error-header">
+									<h1>Sorry, page not found.</h1>
+									<p>The page you are looking for is no longer available or has been moved.</p>
+								</div><!-- end error-header -->
+
+								<div class="various-content">
+
+									<div class="var-section">
+										<h2>Search the site</h2>
+										
+										<form method="get" class="searchform" action="http://batakoo.themesawesome.com/" role="search">
+<input type="search" class="field input-text" name="s" value="" id="s" placeholder="Type Keywords" />
+<input type="submit" class="submit search-button btn btn-sm" value="search" />
+</form>
+									</div><!-- end var-section -->
+
+									<div class="var-section">
+										<h2>Latest Article</h2>
+										<ul>
+																				    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/consuetudium-lectorum-mirum-est-notare-quam/">Consuetudium Lectorum Mirum Est Notare quam</a>
+										    	  </li>
+									    	  
+									    										    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/investigationes-demonstraverunt-lectores/">Investigationes Demonstraverunt Lectores</a>
+										    	  </li>
+									    	  
+									    										    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/claritas-est-etiam-processus-dynamicus/">Claritas Est Etiam Processus Dynamicus</a>
+										    	  </li>
+									    	  
+									    										    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem-2/">Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit Eorum Claritatem</a>
+										    	  </li>
+									    	  
+									    										    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem/">Typi Non Habent Facit Eorum Claritatem</a>
+										    	  </li>
+									    	  
+									    										    	
+										    	  <li>
+										    	    <a href="http://batakoo.themesawesome.com/themes-awesome/">Themes Awesome</a>
+										    	  </li>
+									    	  
+									    											</ul>
+									</div><!-- end var-section -->
+
+								</div><!-- end various-content -->
+
+
+
+							</div><!-- end error-page -->
+
+						</div><!-- end site-content -->
+						
+					</div><!-- end content-area -->
+
+				</div><!-- end row -->
+			</div>
+
+
+</div><!-- site-main -->
+
+<footer id="footer-section" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-widget-wrapper widget clearfix">
+					  
+        <div class="footer-widget col-md-4">
+            <div id="text-2" class="widget-inner widget_text"><div class="widget-title"><h4><span>ABOUT US</span></h4></div>			<div class="textwidget"><img src="http://batakoo.themesawesome.com/wp-content/uploads/2015/01/logo-light.png" alt="logo-light"><br>
+<br>
+<p>Lusioto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p></div>
+		</div>        </div>
+        
+        <div class="footer-widget col-md-4">
+            <div id="text-3" class="widget-inner widget_text"><div class="widget-title"><h4><span>OFFICE ADDRESS</span></h4></div>			<div class="textwidget"><p>Our Office Address :</p>
+								<table>
+									<tbody><tr>
+										<td><strong>Location</strong></td>
+										<td> : Kaliurang St. No 104, Sinduharjo, <br>&nbsp;&nbsp;Ngaglik, Sleman.</td>
+									</tr>
+									<tr>
+										<td><strong>Telp</strong></td>
+										<td> : (0274) 9982732</td>
+									</tr>
+									<tr>
+										<td><strong>Email</strong></td>
+										<td> : <a href="mailto:staff@localhost.net">staff@localhost.net</a></td>
+									</tr>
+									<tr>
+										<td><strong>Open Hour</strong></td>
+										<td> : Monday ‐ Friday <br> &nbsp;&nbsp;08:00 AM ‐ 16:00 PM</td>
+									</tr>
+								</tbody></table></div>
+		</div>        </div>
+        
+        <div class="footer-widget col-md-4">
+            <div id="text-4" class="widget-inner widget_text"><div class="widget-title"><h4><span>BUY NOW</span></h4></div>			<div class="textwidget"><p>If you come all the way down here, you probably really like our Batakoo theme. To save you all the troubles finding where to buy this theme, we have a solution for that too. Just click the button below. </p>
+<a href="http://themeforest.net/item/batakoo-modern-construction-wp-theme/10181349?ref=themesawesome" class="btn btn-lg btn-default"> BUY NOW </a></div>
+		</div>        </div>
+    
+  					</div>
+				</div><!-- end widget -->
+			</div>
+</footer>
+
+		<div class="footer-credit">
+			<ul class="list-socmed">
+				  <li class="facebook"><a href="http://facebook.com/#"><i class="fa fa-fw fa-facebook"></i></a></li>
+    <li class="twitter"><a href="http://twitter.com/#"><i class="fa fa-fw fa-twitter"></i></a></li>
+  <li class="linkedin"><a href="http://linkedin.com/#"><i class="fa fa-fw fa-linkedin"></i></a></li>
+  <li class="instagram"><a href="http://instagram.com/#"><i class="fa fa-fw fa-instagram"></i></a></li>
+  <li class="youtube"><a href="http://youtube.com/#"><i class="fa fa-fw fa-youtube"></i></a></li>
+  <li class="pinterest"><a href="http://pinterest.com/#"><i class="fa fa-fw fa-pinterest"></i></a></li>
+  <li class="google"><a href="http://google.com/#"><i class="fa fa-fw fa-google-plus"></i></a></li>
+			</ul>
+			<div class="copy">Powered by WordPress - Built by <a href="http://www.themesawesome.com/">Themes Awesome</a></div>
+		</div><!-- end footer-credit -->
+
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/plugins/aqua-page-builder/assets/javascripts/aqpb-view.js?ver=1423473980'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.15.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-includes/js/mediaelement/wp-mediaelement.js?ver=4.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/batakoo.themesawesome.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.0.3'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/themes/batakoo/js/bootstrap.min.js?ver=4.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/themes/batakoo/js/flexslider.js?ver=4.1'></script>
+<script type='text/javascript' src='http://batakoo.themesawesome.com/wp-content/themes/batakoo/js/main.js?ver=4.1'></script>
+
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 4/10 queries in 0.006 seconds using disk
+Object Caching 774/783 objects using disk
+
+ Served from: batakoo.themesawesome.com @ 2015-02-09 09:26:20 by W3 Total Cache -->
