@@ -149,7 +149,7 @@ $result = mysqli_query($con,"SELECT * FROM second WHERE id =34");
 
     					<nav id="primary-navigation" class="site-navigation navbar-collapse collapse" role="navigation">
     						<nav class="nav-menu">
-    							<ul id="menu-main-menu" class="menu"><li id="menu-item-3953" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3857 current_page_item menu-item-3953"><a href="index.html">Home</a></li>
+    							<ul id="menu-main-menu" class="menu"><li id="menu-item-3953" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3857 current_page_item menu-item-3953"><a href="index.php">Home</a></li>
 <li id="menu-item-3963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963"><a href="services/index.html">Products</a></li>
 <li id="menu-item-3961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3961"><a href="portfolio/index.html">Projects</a></li>
 <li id="menu-item-3964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3964"><a href="testimonial/index.html">Sustainability</a></li>
