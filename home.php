@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-inverse" style="border-radius: 0;">
 			<a class="navbar-brand" href="admin.php" style=" float: right;"> logout</a>
 </nav>
-<form action="control.php" method="post">
+<form enctype="multipart/form-data" action="control.php" method="post">
   <div class="form-group">
     <label for="exampleInputEmail1">Headline</label>
     <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Headline" name="news1">
@@ -32,7 +32,7 @@
   	<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
 
     <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile" name="userfile">
+    <input type="file" id="exampleInputFile" name="fileToUpload">
   </div>
   
   <button type="submit" class="btn btn-default">Submit</button>
