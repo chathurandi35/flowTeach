@@ -32,7 +32,7 @@
   	<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
 
     <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile" name="fileToUpload">
+    <input type="file" id="exampleInputFile" name="file">
   </div>
   
   <button type="submit" class="btn btn-default">Submit</button>
