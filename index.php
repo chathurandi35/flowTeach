@@ -107,6 +107,24 @@
 </head>
 
 <body class="home page page-id-3857 page-template page-template-template page-template-page-builder-template page-template-templatepage-builder-template-php">
+
+	<?php
+$con=mysqli_connect("localhost","root","","flowteach");
+
+
+$result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
+ 
+ 	$row = mysqli_fetch_array($result);
+
+ 	$result1 = mysqli_query($con,"SELECT * FROM second WHERE id =43");
+ 
+ 	$row1 = mysqli_fetch_array($result1);
+
+ 	$result2 = mysqli_query($con,"SELECT * FROM second WHERE id =44");
+ 
+ 	$row2 = mysqli_fetch_array($result2);
+ 	
+?>
 	
 
 			<header id="masthead" class="site-header navbar-fixed-top">
@@ -532,7 +550,7 @@
 
 
 
-		            					<figure class="w-thumb">
+		           <figure class="w-thumb">
 					<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam">
 						<img width="330" height="160" src="wp-content/uploads/2015/01/img400_pic4900_producto-330x160.jpg" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="img400_pic4900_producto" />
 						
@@ -542,12 +560,12 @@
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam"  class="post-title">Consuetudium Lectorum Mirum Est Notare quam</a>
+						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam"  class="post-title"><?php echo $row['news1'];?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt...	
+					<?php echo $row['news2']; ?>	
 						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
@@ -568,12 +586,12 @@
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores"  class="post-title">Investigationes Demonstraverunt Lectores</a>
+						<a href="investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores"  class="post-title"><?php echo $row1['news1']; ?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt...	
+					<?php echo $row1['news2']; ?>
 						<a href="investigationes-demonstraverunt-lectores/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
@@ -594,12 +612,12 @@
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus"  class="post-title">Claritas Est Etiam Processus Dynamicus</a>
+						<a href="claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus"  class="post-title"><?php echo $row2['news1']; ?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt...	
+					<?php echo $row2['news2']; ?>
 						<a href="claritas-est-etiam-processus-dynamicus/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
