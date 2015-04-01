@@ -116,6 +116,7 @@
 			{
 				${"header".$i} = $row['news1'];
 				${"content".$i} = $row['news2'];
+				${"image".$i} = $row['image'];
 				$i++;
 			}
 		 
@@ -231,7 +232,7 @@
 
 					<div class="post-thumb">
 					<a href="../consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam">
-						<img width="800" height="379" src="../wp-content/uploads/2015/01/img400_pic4900_producto.jpg" class="attachment-post-thumbnail wp-post-image" alt="img400_pic4900_producto" />					</a>
+						<img width="800" height="379" src=<?php echo $image1	?> class="attachment-post-thumbnail wp-post-image" alt="img400_pic4900_producto" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -300,7 +301,7 @@
 
 					<div class="post-thumb">
 					<a href="../investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores">
-						<img width="637" height="331" src="../wp-content/uploads/2015/01/sendbinary1.jpg" class="attachment-post-thumbnail wp-post-image" alt="sendbinary" />					</a>
+						<img width="637" height="331" src=<?php echo $image2	?> class="attachment-post-thumbnail wp-post-image" alt="sendbinary" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -369,7 +370,7 @@
 
 					<div class="post-thumb">
 					<a href="../claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus">
-						<img width="800" height="550" src="../wp-content/uploads/2015/01/gvs-10821.jpg" class="attachment-post-thumbnail wp-post-image" alt="gvs-1082" />					</a>
+						<img width="800" height="550" src=<?php echo $image3	?> class="attachment-post-thumbnail wp-post-image" alt="gvs-1082" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -440,7 +441,7 @@
 
 					<div class="post-thumb">
 					<a href="../typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem-2/index.html" title="Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit Eorum Claritatem">
-						<img width="1000" height="508" src="../wp-content/uploads/2015/01/iSGu85T8TXS9zXJ20iBU__MG_9585.jpg" class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />					</a>
+						<img width="1000" height="508" src=<?php echo $image4	?> class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />					</a>
 					</div><!-- post thumb -->
 	
 				</div><!-- end entry-media -->
@@ -509,7 +510,7 @@
 
 		<div class="entry-media">
 
-					<iframe width="1170" height="658" src="http://www.youtube.com/embed/XSGBVzeBUbk?feature=oembed" frameborder="0" allowfullscreen></iframe>	
+					<img width="1000" height="508" src=<?php echo $image5	?> class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />
 		</div><!-- end entry-media -->
 
 		<h1 class="entry-title">
