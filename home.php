@@ -29,7 +29,7 @@
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Description" name="news2">
   </div>
   <div class="form-group">
-  	<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+  	<input type="hidden" name="MAX_FILE_SIZE" value="300000" />
 
     <label for="exampleInputFile">File input</label>
     <input type="file" id="exampleInputFile" name="file">

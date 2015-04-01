@@ -7,9 +7,15 @@ $image=$_POST['file'];
 
 $con=mysqli_connect("localhost","root","","flowteach");
 
-$target_dir = "../uploads/".$_FILES['file']['name'];
+$destination_path = "uploads/";
+
+$target_path = $destination_path . basename( $_FILES["file"]["name"]);
+
+@move_uploaded_file($_FILES['file']['tmp_name'], $target_path);
+
+//$target_dir = "../uploads/".$_FILES['file']['name'];
 $image_name = $_FILES['file']['name'];
-move_uploaded_file($_FILES['file']['tmp_name'],$target_dir);
+//move_uploaded_file($_FILES['file']['tmp_name'],$target_dir);
 echo "uploaded";
 
 $x=mysqli_query($con,"INSERT INTO second(news1,news2,image_name)
