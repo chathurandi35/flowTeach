@@ -307,13 +307,13 @@
 				
 		<h1 class="entry-title">
 			<a href="../investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores">
-			Investigationes Demonstraverunt Lectores			</a>
+			<?php echo $header2	?>			</a>
 		</h1>
 
 	</header><!-- end entry-header -->
 
 	<div class="entry-content">
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo&#8230;</p>
+		<p><?php echo $content2	?></p>
 	</div>
 
 </article><!-- #4003 -->
@@ -376,13 +376,13 @@
 				
 		<h1 class="entry-title">
 			<a href="../claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus">
-			Claritas Est Etiam Processus Dynamicus			</a>
+			<?php echo $header3	?>			</a>
 		</h1>
 
 	</header><!-- end entry-header -->
 
 	<div class="entry-content">
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo&#8230;</p>
+		<p><?php echo $content3	?></p>
 	</div>
 
 </article><!-- #4000 -->
@@ -449,13 +449,13 @@
 
 		<h1 class="entry-title">
 			<a href="../typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem-2/index.html" title="Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit Eorum Claritatem">
-			Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit Eorum Claritatem			</a>
+			<?php echo $header4	?>		</a>
 		</h1>
 
 	</header><!-- end entry-header -->
 
 	<div class="entry-content">
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo&#8230;</p>
+		<p><?php echo $content4	?></p>
 	</div>
 
 </article><!-- #3891 -->
@@ -514,13 +514,13 @@
 
 		<h1 class="entry-title">
 			<a href="../typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem/index.html" title="Typi Non Habent Facit Eorum Claritatem">
-			Typi Non Habent Facit Eorum Claritatem			</a>
+			<?php echo $header5	?>		</a>
 		</h1>
 
 	</header><!-- end entry-header -->
 
 	<div class="entry-content">
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo&#8230;</p>
+		<p><?php echo $content5	?></p>
 	</div>
 
 </article><!-- #3888 -->

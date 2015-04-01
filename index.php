@@ -112,15 +112,15 @@
 $con=mysqli_connect("localhost","root","","flowteach");
 
 
-$result = mysqli_query($con,"SELECT * FROM second WHERE id =34");
+$result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
  
  	$row = mysqli_fetch_array($result);
 
- 	$result1 = mysqli_query($con,"SELECT * FROM second WHERE id =35");
+ 	$result1 = mysqli_query($con,"SELECT * FROM second WHERE id =43");
  
  	$row1 = mysqli_fetch_array($result1);
 
- 	$result2 = mysqli_query($con,"SELECT * FROM second WHERE id =36");
+ 	$result2 = mysqli_query($con,"SELECT * FROM second WHERE id =44");
  
  	$row2 = mysqli_fetch_array($result2);
  	
