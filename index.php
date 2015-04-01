@@ -119,6 +119,7 @@
 			{
 				${"header".$i} = $row['news1'];
 				${"content".$i} = $row['news2'];
+				${"image".$i}= $row['image_name'];
 				$i++;
 			}
 	?>
@@ -549,7 +550,7 @@
 
 		           <figure class="w-thumb">
 					<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam">
-						<img width="330" height="160" src="wp-content/uploads/2015/01/img400_pic4900_producto-330x160.jpg" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="img400_pic4900_producto" />
+						<img width="330" height="160" src="uploads/<?php echo $image1;?>" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="img_news1" />
 						
 					</a>
 					</figure>
@@ -575,7 +576,7 @@
 		           
 		            					<figure class="w-thumb">
 					<a href="investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores">
-						<img width="330" height="160" src="wp-content/uploads/2015/01/sendbinary1-330x160.jpg" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="sendbinary" />
+						<img width="330" height="160" src="uploads/<?php echo $image2;?>" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="sendbinary" />
 						
 					</a>
 					</figure>
@@ -601,7 +602,7 @@
 		           
 		            					<figure class="w-thumb">
 					<a href="claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus">
-						<img width="330" height="160" src="wp-content/uploads/2015/01/gvs-10821-330x160.jpg" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="gvs-1082" />
+						<img width="330" height="160" src="uploads/<?php echo $image3;?>" class="attachment-batakoo-latest-builder-thumb wp-post-image" alt="gvs-1082" />
 						
 					</a>
 					</figure>
