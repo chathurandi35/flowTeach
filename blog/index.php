@@ -157,7 +157,7 @@
 <li id="menu-item-3963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963"><a href="../services/index.html">Products</a></li>
 <li id="menu-item-3961" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3961"><a href="../portfolio/index.html">Projects</a></li>
 <li id="menu-item-3964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3964"><a href="../testimonial/index.html">Sustainability</a></li>
-<li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-703 current_page_item current_page_parent menu-item-has-children menu-item-3954"><a href="index.html">Blog</a></li>
+<li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-703 current_page_item current_page_parent menu-item-has-children menu-item-3954"><a href="index.php">Blog</a></li>
 <li id="menu-item-3955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3955"><a href="../contact-2/index.html">Contact</a></li>
 </ul>    						</nav><!-- end nav-menu -->
     					</nav><!-- primary-navigation -->

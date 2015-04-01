@@ -160,7 +160,7 @@ $result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
 	<li id="menu-item-3970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3970"><a href="404.html">404 Page</a></li>
 </ul>
 </li>-->
-<li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3954"><a href="blog/index.html">Blog</a>
+<li id="menu-item-3954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3954"><a href="blog/index.php">Blog</a>
 <!--<ul class="sub-menu">
 	<li id="menu-item-3960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3960"><a href="masonry-grid-blog/index.html">Masonry Grid Blog</a></li>
 </ul>-->
