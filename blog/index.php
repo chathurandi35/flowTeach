@@ -116,7 +116,7 @@
 			{
 				${"header".$i} = $row['news1'];
 				${"content".$i} = $row['news2'];
-				${"image".$i} = $row['image'];
+				${"image".$i}= $row['image_name'];
 				$i++;
 			}
 		 
@@ -232,7 +232,7 @@
 
 					<div class="post-thumb">
 					<a href="../consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam">
-						<img width="800" height="379" src=<?php echo $image1	?> class="attachment-post-thumbnail wp-post-image" alt="img400_pic4900_producto" />					</a>
+						<img width="800" height="379" src="../uploads/<?php echo $image1;?>" class="attachment-post-thumbnail wp-post-image" alt="img400_pic4900_producto" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -301,7 +301,7 @@
 
 					<div class="post-thumb">
 					<a href="../investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores">
-						<img width="637" height="331" src=<?php echo $image2	?> class="attachment-post-thumbnail wp-post-image" alt="sendbinary" />					</a>
+						<img width="637" height="331" src="../uploads/<?php echo $image2;?>" class="attachment-post-thumbnail wp-post-image" alt="sendbinary" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -370,7 +370,7 @@
 
 					<div class="post-thumb">
 					<a href="../claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus">
-						<img width="800" height="550" src=<?php echo $image3	?> class="attachment-post-thumbnail wp-post-image" alt="gvs-1082" />					</a>
+						<img width="800" height="550" src="../uploads/<?php echo $image3;?>" class="attachment-post-thumbnail wp-post-image" alt="gvs-1082" />					</a>
 					</div><!-- post thumb -->
 	
 		</div><!-- end entry-media -->
@@ -441,7 +441,7 @@
 
 					<div class="post-thumb">
 					<a href="../typi-non-habent-claritatem-insitam-est-usus-legentis-in-qui-facit-eorum-claritatem-2/index.html" title="Typi Non Habent Claritatem Insitam Est Usus Legentis in Qui Facit Eorum Claritatem">
-						<img width="1000" height="508" src=<?php echo $image4	?> class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />					</a>
+						<img width="1000" height="508" src="../uploads/<?php echo $image4;?>" class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />					</a>
 					</div><!-- post thumb -->
 	
 				</div><!-- end entry-media -->
@@ -510,7 +510,7 @@
 
 		<div class="entry-media">
 
-					<img width="1000" height="508" src=<?php echo $image5	?> class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />
+					<img width="1000" height="508" src="../uploads/<?php echo $image5;?>"class="attachment-post-thumbnail wp-post-image" alt="iSGu85T8TXS9zXJ20iBU__MG_9585" />
 		</div><!-- end entry-media -->
 
 		<h1 class="entry-title">
