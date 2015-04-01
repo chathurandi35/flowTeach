@@ -109,22 +109,19 @@
 <body class="home page page-id-3857 page-template page-template-template page-template-page-builder-template page-template-templatepage-builder-template-php">
 
 	<?php
-$con=mysqli_connect("localhost","root","","flowteach");
+		$con=mysqli_connect("localhost","root","","flowteach");
 
 
-$result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
- 
- 	$row = mysqli_fetch_array($result);
+		$result = mysqli_query($con,"SELECT * FROM second");
 
- 	$result1 = mysqli_query($con,"SELECT * FROM second WHERE id =43");
- 
- 	$row1 = mysqli_fetch_array($result1);
-
- 	$result2 = mysqli_query($con,"SELECT * FROM second WHERE id =44");
- 
- 	$row2 = mysqli_fetch_array($result2);
- 	
-?>
+			$i=1;
+			while($row = mysqli_fetch_array($result))
+			{
+				${"header".$i} = $row['news1'];
+				${"content".$i} = $row['news2'];
+				$i++;
+			}
+	?>
 	
 
 			<header id="masthead" class="site-header navbar-fixed-top">
@@ -560,12 +557,12 @@ $result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam"  class="post-title"><?php echo $row['news1'];?></a>
+						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" title="Consuetudium Lectorum Mirum Est Notare quam"  class="post-title"><?php echo $header1;?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					<?php echo $row['news2']; ?>	
+					<?php echo $content1; ?>	
 						<a href="consuetudium-lectorum-mirum-est-notare-quam/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
@@ -586,12 +583,12 @@ $result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores"  class="post-title"><?php echo $row1['news1']; ?></a>
+						<a href="investigationes-demonstraverunt-lectores/index.html" title="Investigationes Demonstraverunt Lectores"  class="post-title"><?php echo $header2; ?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					<?php echo $row1['news2']; ?>
+					<?php echo $content2; ?>
 						<a href="investigationes-demonstraverunt-lectores/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
@@ -612,12 +609,12 @@ $result = mysqli_query($con,"SELECT * FROM second WHERE id =42");
 				<div class="entry-header">
 					<div class="published entry-date">January 21, 2015</div>
 					<h2 class="post-title entry-title">
-						<a href="claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus"  class="post-title"><?php echo $row2['news1']; ?></a>
+						<a href="claritas-est-etiam-processus-dynamicus/index.html" title="Claritas Est Etiam Processus Dynamicus"  class="post-title"><?php echo $header3; ?></a>
 					</h2>
 				</div><!-- end entry-header -->
 				
 				<div class="entry-content">
-					<?php echo $row2['news2']; ?>
+					<?php echo $content3; ?>
 						<a href="claritas-est-etiam-processus-dynamicus/index.html" class="more">Read More</a>
 				</div><!-- entry-content -->
 
